@@ -2,7 +2,7 @@ package level_1;
 
 import java.util.*;
 
-public class java_1993 {
+public class java_1933 {
 	
 	public static void main(String[] args) {
 		
