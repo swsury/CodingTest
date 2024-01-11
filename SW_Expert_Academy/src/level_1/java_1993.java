@@ -1,6 +1,6 @@
 package level_1;
 
-import java.util.Scanner;
+import java.util.*;
 
 public class java_1993 {
 	
@@ -8,21 +8,41 @@ public class java_1993 {
 		
 		Scanner sc = new Scanner(System.in);
 		int num = sc.nextInt();
-		int n = num;
 		int one = 1;
-				
-		System.out.println(one);
+		int n = num;
 		
-		for ( int i = 2 ; i <= num; i++) {
-			
-			while ( num % i == 0) {
-				System.out.println(i);
+		int i=2;
+		ArrayList<Integer> list = new ArrayList<>();
+		
+		while(num>=i) 
+		{
+			if(num%i==0) 
+			{
+				list.add(i);
 				num /= i;
-			
+			}
+			else 
+			{
+				i++;
 			}
 		}
 		
-		System.out.println(n);
+		HashSet<Integer> arr = new HashSet<Integer>(list);
+		
+		String resert = arr.toString().replaceAll(",", "");
+		String answer = resert.replace("[", "").replace("]", "");
+		
+		int lastIdx = list.size() -1; 
+		int lastNum = list.get(lastIdx);
+		
+		if (lastNum == n) {
+			System.out.println(one +" "+ answer);
+		}
+		else {
+			System.out.println(one +" "+ answer +" "+ n);
+		}
+		
+		
 	}
 
 }
