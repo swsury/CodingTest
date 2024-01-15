@@ -1,7 +1,5 @@
 package level_1;
 
-import java.util.Arrays;
-
 public class java_2027 {
 	
 	public static void main(String[] args) {
