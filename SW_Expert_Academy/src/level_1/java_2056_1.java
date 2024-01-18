@@ -2,7 +2,7 @@ package level_1;
 
 import java.util.Scanner;
 
-public class java_2056 {
+public class java_2056_1 {
 	
 	public static void main(String[] args) {
 		
